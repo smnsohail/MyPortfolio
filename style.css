@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing :border-box;
+}
+.navBar {
+    width: 100%;
+    height: 5em;
+    background-color: #0d0d11;
+    display: flex;
+    align-items: center; /* Centers items vertically within the navbar */
+    padding: 0 1rem 0 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    justify-content: space-around; /* Space between left and right sections */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#logo img {
+    margin-right: 0.5rem;
+}
+
+#nav-right ul {
+    display: flex;
+    gap: 1rem; /* Adds space between each list item */
+    list-style: none; /* Removes bullet points from list items */
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+#nav-right li {
+    cursor: pointer;
+    display: inline;
+}
