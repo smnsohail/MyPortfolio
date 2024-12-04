@@ -79,3 +79,58 @@ a{
     border-radius:10px ;
     color: #05001b;
 }
+nav-right ul :active {
+    background-color: white;
+    border-radius:10px ;
+    color: #05001b;
+}
+
+/*////////////////////     MAIN HERO SECTON     ////////////////  */
+
+
+
+
+
+/*////////////////////    Footer SECTON     //////////////////  */
+footer {
+    background-color: #05001b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-section {
+    text-align: left;
+    margin: 0 20px;
+    text-align: justify;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+    
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8em;
+    background-color: #201b37;
+}
