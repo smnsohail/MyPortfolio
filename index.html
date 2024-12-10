@@ -4,84 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="/images/smnLogo.png" type="image/png"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- creating a nav bar -->
+    <!-- Navigation Bar -->
     <header>
         <nav class="navBar">
-            <div id="nav" class="navBar">
-                <div id="nav-left" class="navBar">
-                    <div id="nav-left-logo" class="navBar">
-                        <img src="/images/smnLogo.png"></img>
-                        <p><a id="nav-logo-name" href="index.html">Sohil's Portfolio</a></p>  
-                    </div>
-                </div>
-    
-                <div id="nav-right" class="navBar">
-                    <ul id="nav-right-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Skills </a></li>
-                        <li><a href="#">Contact me</a></li>
-                    </ul>
-                </div>
+            <div id="nav-left">
+                <img src="/images/smnLogo.png" alt="Logo" id="logo">
+                <p id="brand-name">Sohil's Portfolio</p>
             </div>
-           
+            <div id="nav-right">
+                <ul id="nav-right-list" class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="menu-icon" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
 
-    <!--main section-->
-
+    <!-- Intro Section -->
     <main>
-        <section  class="main">
-            <img class="hero-banner" src="/images/smnLogo.png"/>
+        <section class="intro" id="home">
+            <h1>Hi! My name is <span id="typing-text"></span><span id="cursor">|</span></h1>
         </section>
-        <section class="skill main"></section>
 
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I’m a passionate Software Development Engineer transitioning from Civil Engineering...</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Hotel Booking Website</li>
+                <li>Amazon Clone</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>SQL, Java</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out!</p>
+        </section>
     </main>
 
-
-    <!--footer section-->
-
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>About Me</h4>
-                <p>I'm a passionate Software Development Engineer with a strong foundation in programming. After transitioning from Civil Engineering, I'm currently specializing in Java Full Stack development. I have experience with HTML, CSS, JavaScript, SQL, and Git. I'm eager to apply my skills in building dynamic and user-friendly applications. I thrive in collaborative environments and enjoy continuously learning new technologies. My goal is to contribute to innovative tech projects while growing professionally in the software development field.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="mailto:your_email@example.com">your_email@example.com</a></li>
-                    <li><a href="tel:+1234567890">+123-456-7890</a></li>
-                    <li><a href="https://www.linkedin.com/in/smnsohail">LinkedIn</a></li>
-                    <li><a href="https://github.com/smnsohail">GitHub</a></li>   
-    
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Newsletter</h4>
-                <p>Subscribe to my newsletter for updates and project news.</p>
-                <form>
-                    <input type="email" placeholder="Your Email Address">
-                    <button type="submit">Subscribe</button>
-                </form>
+            <div class="footer-about">
+                <p>I'm a passionate Software Developer transitioning from Civil Engineering...</p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+            <p>&copy; 2023 Sohil's Portfolio. All rights reserved.</p>
         </div>
     </footer>
 
-    
-
-
+    <script src="script.js"></script>
 </body>
 </html>
